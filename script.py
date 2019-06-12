@@ -31,7 +31,7 @@ def getdata(url):
              tmp = []
              tmp.append(d[records[i][0][:3]])
              tmp.append(int(records[i][0][-2:]))
-             for j in range(2, len(records[0])):
+             for j in range(1, len(records[i])):
                      tmp.append(int(records[i][j].replace(',', '')))
              records[i] = tmp
         # modify head
